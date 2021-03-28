@@ -1,6 +1,6 @@
 const express = require( "express" );
 const app = express();
-const port = 8080; // default port to listen
+const port = 3000; // default port to listen
 const cors =require('cors');
 var bodyParser = require('body-parser')
 import {router} from './routes/common';
@@ -11,7 +11,8 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 })); 
 app.use(cors({
 origin:'*',
-methods: 'GET,POST,OPTIONS,DELETE,PUT'
+methods: 'GET,POST,OPTIONS,DELETE,PUT',
+credentials: true
 }))
 app.use('/',router);
 
