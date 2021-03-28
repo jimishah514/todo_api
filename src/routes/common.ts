@@ -12,4 +12,4 @@ router.post( "/todo",
 
    router.get( "/todos", 
    requireAuthUser(),
-   commonController.getTodo);
+   commonController.getTodos);
