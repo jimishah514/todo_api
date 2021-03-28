@@ -1,5 +1,5 @@
 {
-  "name": "stripe-api",
+  "name": "todo-api",
   "version": "1.0.0",
   "description": "thisis a todo app",
   "main": "dist/index.js",

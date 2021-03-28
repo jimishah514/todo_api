@@ -2,7 +2,7 @@ import {NextFunction, Request, Response} from 'express';
 import { TodoApi } from '../resources/todo';
 export class commonController {
     static getHelloWorld(req:Request,res:Response,next:NextFunction) {
-        res.send('Hello World');
+        res.send('Welcome  to ToDo-App Api');
     }
 
     static postTodo(req:Request,res:Response,next:NextFunction) {
